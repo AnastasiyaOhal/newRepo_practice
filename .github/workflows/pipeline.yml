@@ -8,8 +8,8 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+    # Add the rest of your job configuration below
 
-      # Replace with your desired Terraform version
 
     steps:
     - name: Checkout Repository
