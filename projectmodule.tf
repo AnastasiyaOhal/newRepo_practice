@@ -1,4 +1,4 @@
-module "3TierAppProject" {
-  source  = "AnastasiyaOhal/3TierAppProject/aws"
+module "ThreeTierAppProject" {
+  source  = "AnastasiyaOhal/ThreeTierAppProject/aws"
   version = "0.0.3"
 }
