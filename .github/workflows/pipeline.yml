@@ -2,16 +2,14 @@ name: Terraform Workflow
 
 on:
   push:
-    branches: test
+    branches: new2
   pull_request:
       branches: main
 
 jobs:
   terraform:
     runs-on: ubuntu-latest
-    # Add the rest of your job configuration below
-
-
+    
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
@@ -39,5 +37,6 @@ jobs:
    # - name: Terraform Plan
    #   run: terraform graph
 
-   # - name: Terraform Apply
-   #   run: terraform apply -auto-approve
+    - name: Terraform Apply
+      run: terraform apply -auto-approve
+      if: github.ref == 'refs/heads/main'
