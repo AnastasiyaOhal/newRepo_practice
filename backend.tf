@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "anastasiyaohaltestmybucket"
+    bucket = "anastasiyaohaltestbucket"
     key    = "path/key"
     region = "us-east-2"
   }
